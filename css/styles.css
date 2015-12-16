@@ -1,0 +1,17 @@
+body{background-image: url('../images/jardin.jpg');}
+.boton {position: relative;top: 200px;left: 100px;width: 150px;height: 40px;border-radius: 5px;border: 0;background-color: #1BAEBD;color: black;font-size: larger;}
+.Oficina{text-align: center;}
+.mesa{border-radius: 45px;display: inline-block;padding: 10px;margin-top: 20px;background-color: #ECEBEB;text-align: center;border: 1px solid #BBB;}
+#mesa-central{width: 500px;}
+#mesa-atras{width: 700px;}
+.Sitio{background-color: #ECEBEB;width: 150px;height: 150px;display: inline-block;position: relative;color: #fff;font-size: 40px;text-decoration: underline;text-align: center;vertical-align: middle;border-radius: 80px;margin-top: 10px;margin-bottom: 10px;text-shadow: 2px 2px #000000;border: 1px solid #000;background-size: cover;}
+.Oscar{background-image: url('../images/oscar.jpg');}
+.Claudio{background-image: url('../images/claudio.jpg');}
+.Freddy{background-image: url('../images/freddy.jpg');}
+.Percy{background-image: url('../images/percy.jpg');}
+.Hugo{background-image: url('../images/hugo.jpg');}
+.John{background-image: url('../images/john.jpg');}
+.Humberto{background-image: url('../images/humberto.jpg');}
+.Rulo{background-image: url('../images/rulo.jpg');}
+.Andres{background-image: url('../images/andres.jpg');}
+.Rafa{background-image: url('../images/rafa.jpg');}

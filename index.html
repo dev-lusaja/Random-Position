@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<button class="boton">Rotar Sitios</button>
+<div class="Oficina">
+	<div id="mesa-central" class="mesa"></div>
+	<br>
+	<div id="mesa-atras" class="mesa"></div>
+</div>
+	<script>
+	var sitios = 10;
+	var devs = ['Claudio', 'Oscar', 'Freddy', 'Percy', 'Hugo', 'John', 'Humberto', 'Rulo', 'Andres', 'Rafa'];
+	Random();
+
+	var times;
+	$('.boton').on('click',function () {
+		times = 50;
+		Random(true);
+	})
+	function Random (next) {	
+		Shuffle(devs);
+		$('#mesa-central').empty();
+		$('#mesa-atras').empty();
+		for (var i = 0; i < sitios; i++) {
+			var id = i + 1;
+			if (id <= 6) {
+				$('#mesa-central').append("<div id="+id+" class='Sitio'></div>");
+			} else {
+				$('#mesa-atras').append("<div id="+id+" class='Sitio'></div>");
+			};
+		};
+		$.each(devs, function (i,n) {
+			valor = i+1;
+			if (valor <= 6) {
+				var element = $('#mesa-central').find('#'+valor);
+				element.addClass(n).append("<p>"+valor+"</p>");
+			} else {
+				var element = $('#mesa-atras').find('#'+valor);
+				element.addClass(n).append("<p>"+valor+"</p>");
+			};
+		})
+		if (next && times > 0) {
+			setTimeout(function() {
+				times--;
+				Random(true);
+			}, 100);
+		}
+	}
+	function Shuffle (arr) {
+		$.each(arr, function (i,n) {
+			var val_act = n;
+			var indice_rdm = Math.floor(arr.length * Math.random());
+			var val_rdm = arr[indice_rdm];
+			var aux = val_act;
+			arr[i] = val_rdm;
+			arr[indice_rdm] = aux;
+		})
+	}
+	</script>
+</body>
+</html>
