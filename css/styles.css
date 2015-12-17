@@ -1,7 +1,8 @@
 body{background-image: url('http://p1.pichost.me/i/11/1342424.jpg');background-size: 100% auto;background-repeat: no-repeat;}
-.boton {position: relative;top: -117px;left: -95px;width: 90px;height: 90px;border-radius: 55px;border: none;background-color: #F37E3D;color: #FCFBC0;font-size: larger;}
-.boton:hover {background-color: #E4A17C;color: black;}
-.boton:focus {outline: none;border: 1px solid #000;}
+.boton {position: relative;top: -117px;left: -95px;width: 90px;height: 90px;border-radius: 55px;background-color: #F37E3D;color: #FCFBC0;font-size: larger;-webkit-box-shadow: 0px 5px 0px #A96748;-moz-box-shadow: 0px 5px 0px #c4c4c4;-ms-box-shadow: 0px 5px 0px #c4c4c4;-o-box-shadow: 0px 5px 0px #c4c4c4;box-shadow: 0px 5px 0px #BD6B44;border: 1px solid #944011;}
+.boton:hover {cursor: pointer;}
+.boton:active {outline: none;border: 3px solid #BD6B44;-webkit-box-shadow: none !important;-moz-box-shadow: none !important;-ms-box-shadow: none !important;-o-box-shadow: none !important;box-shadow: none !important;top:-112px;}
+.boton:focus {outline: none;}
 .Oficina{text-align: center;}
 .mesa{border-radius: 45px;display: inline-block;padding: 10px;margin-top: 20px;background-color: #2381A1;text-align: center;border: 1px solid #2381A1;}
 #mesa-central{width: 500px;}
@@ -17,3 +18,5 @@ body{background-image: url('http://p1.pichost.me/i/11/1342424.jpg');background-s
 .Rulo{background-image: url('https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/12294744_10153317604874503_7775125440935326391_n.jpg?oh=eb27e03649d9c29494a52944f115db4e&oe=56D4BC02&__gda__=1461688047_d48c6f8ea4ed1a725e5db3f9579cbff1');}
 .Andres{background-image: url('https://fbcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t34.0-0/p206x206/11131808_10153279855739548_735111385_n.jpg?oh=573e25099cf87c2d2afb28cb72549feb&oe=5674B9C6&__gda__=1450496171_b025d6dd784b6ab0ea3ea35861dd6a84');}
 .Rafa{background-image: url('https://scontent-mia1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/164547_1714520193122_4121504_n.jpg?oh=1ce6b6d851fcb83c03ad872f9450353f&oe=571BA60C');}
+
+
